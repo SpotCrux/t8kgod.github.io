@@ -1,0 +1,24 @@
+{
+  "name": "t8kgod",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lracdim/t8kgod.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lracdim/t8kgod/issues"
+  },
+  "homepage": "https://github.com/lracdim/t8kgod#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
