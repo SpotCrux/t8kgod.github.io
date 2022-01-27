@@ -84,11 +84,12 @@
    .menu { 
     display:none;
     position: absolute;
-    background-color:teal;
+    background-color:#7096c7;
     right: 0;
     left: 0;
     text-align: center;
     padding: 16px 0;
+    z-index: 1000;
    }
    .menu li:hover {
     display: inline-block;
@@ -112,7 +113,24 @@
    .dropdown li:hover {
     background-color: #4c9e9e;
    }
+
+
+   .hero-section {
+       position: relative;
+       display: flex;
+       flex-direction: column-reverse;
    }
+
+   .hero-section .hero-content {
+       padding: 0 10%;
+   }
+
+   .hero-section .hero-img img {
+       width: 200px;
+   }
+
+
+ }
 
 
    /*hero area*/
