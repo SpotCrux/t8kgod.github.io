@@ -115,22 +115,71 @@
    }
 
 
+   /* Hero Section */
+
    .hero-section {
        position: relative;
+       margin: 0 10% -50px;
        display: flex;
-       flex-direction: column-reverse;
+       justify-content: space-between;
+
    }
 
+   .hero-section .hero-img img{
+       max-width: 350px;
+   }
    .hero-section .hero-content {
-       padding: 0 10%;
+       margin-top: -100px;
+   }
+   .hero-content h1{
+    font-size: 25px;
    }
 
-   .hero-section .hero-img img {
-       width: 200px;
+   .hero-section .hero-content .p1 {
+       font-size: 14px;
+       letter-spacing: 1px;
+       font-weight: bold;
    }
 
+   .hero-section .hero-content .p2{
+       
+       letter-spacing: normal;
+       font-size: 14px;
+   }
 
- }
+   .hero-section .hero-content .btn-hero {
+        font-size: 14px;
+        padding: .7rem 1.2rem;
+   }
+
+/* articles */
+   .article-section {
+       position: relative;
+   }
+
+   .article-section .art-list {
+     padding: 0 20px;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     
+   }
+
+  .art-list .art-cards {
+      margin: 20px 20px;
+  }
+
+
+/* value section */
+    .value-section{
+        position: relative;
+    }
+
+    .valsec-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
 
 
    /*hero area*/
@@ -192,7 +241,7 @@
 /*Articles*/
 .article-section{
     position: relative;
-    background: #e6f1ff;
+    background: #EED3B6;
     width: 100%;
     padding: 3rem 0 5rem;
 }
