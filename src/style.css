@@ -115,69 +115,7 @@
    }
 
 
-   /* Hero Section */
 
-   .hero-section {
-       position: relative;
-       margin: 0 10% -50px;
-       display: flex;
-       justify-content: space-between;
-
-   }
-
-   .hero-section .hero-img img{
-       max-width: 350px;
-   }
-   .hero-section .hero-content {
-       margin-top: -100px;
-   }
-   .hero-content h1{
-    font-size: 25px;
-   }
-
-   .hero-section .hero-content .p1 {
-       font-size: 14px;
-       letter-spacing: 1px;
-       font-weight: bold;
-   }
-
-   .hero-section .hero-content .p2{
-       
-       letter-spacing: normal;
-       font-size: 14px;
-   }
-
-   .hero-section .hero-content .btn-hero {
-        font-size: 14px;
-        padding: .7rem 1.2rem;
-   }
-
-/* articles */
-   .article-section {
-       position: relative;
-   }
-
-   .article-section .art-list {
-     padding: 0 20px;
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     
-   }
-
-  .art-list .art-cards {
-      margin: 20px 20px;
-  }
-
-
-/* value section */
-    .value-section{
-        position: relative;
-    }
-
-    .valsec-content {
-        display: flex;
-        flex-direction: column;
-    }
 
 }
 
@@ -187,9 +125,10 @@
        position: relative;
        width: 100%;
        padding: 0 10%;
-       display: flex;
-       justify-content: space-evenly;
-       margin: auto;
+       display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+       gap: .25rem;
+       overflow: hidden;
    }
 
    .hero-section .hero-content {
@@ -232,9 +171,9 @@
    .hero-section .hero-img img {
     align-items: center;
     justify-content: center;
-     width:35rem;
-     padding: 3rem;
-     z-index: -1;
+    max-width:25rem;
+    padding: 3rem;
+    z-index: -1;
    
    }
 
@@ -247,7 +186,7 @@
 }
 
 .article {
-    width: 90;
+    width: 90%;
 }
 .article-section h1 {
     text-align: center;
@@ -259,18 +198,18 @@
 
 .art-list {
     position: relative;
-       display: flex;
-       justify-content: space-between;
-       padding: 0 10%;
-       margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-left: 10%;   
 }
 
 .art-list .art-cards{
     background: rgba(235, 233, 233, 0.774);
-    
+    width: 350px;
 }
 .art-list .art-cards img {
-    width: 20rem;
+    width: 350px;
 }
 
 .art-list .art-cards .art-content {
@@ -344,12 +283,13 @@ footer .footer-content .footer-social a:hover{
 /*Value Section*/
 .value-section{
     position: relative;
+    width: 100%;
     padding: 0 10%;
     margin: 5rem auto;
 }
 .value-section .valsec-content{
     position: relative;
-    display: flex;
+    display: grid;
 }
 
 .value-section .valsec-content .val-img img{
